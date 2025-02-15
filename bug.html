@@ -1,0 +1,16 @@
+<!DOCTYPE html>
+<html>
+<head>
+<title>Uncommon HTML Bug</title>
+</head>
+<body>
+  <div id="myDiv">
+    This text should be visible.
+  </div>
+
+  <script>
+    //This is an uncommon bug that only appears in some browsers. The error is caused by trying to set the innerHTML property to null.
+    document.getElementById("myDiv").innerHTML = null; 
+  </script>
+</body>
+</html>
